@@ -1,0 +1,276 @@
+/* Variabel Warna Kustom Anda */
+:root {
+    --primary-color: #0F1E3F;
+    --secondary-color: #213A56;
+    --accent-color: #CDAA80;
+    --light-color: #F8F9FA;
+}
+
+body {
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--secondary-color);
+}
+
+/* 1. Atur wadah utama (kontainer) tempat scroll terjadi */
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory; /* y artinya vertikal (atas-bawah), mandatory artinya wajib mengunci */
+    overflow-y: scroll;
+}
+
+/* 2. Atur semua section agar menjadi titik target kuncian */
+section, header {
+    scroll-snap-align: start; /* Begitu didekati, kunci section tepat di batas atas layar */
+    scroll-snap-stop: always; /* Memaksa scroll berhenti per section, gak bakal kebablasan */
+
+    /* TIPS PENTING: Agar efek ini estetik, pastikan tinggi tiap section setidaknya  */
+    /* mendekati atau pas dengan tinggi layar monitor (100vh) jika kontennya pas. */
+    min-height: 100vh; 
+
+    /* Biar konten di dalam section otomatis rapi di tengah secara vertikal */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+section {
+    padding-top: 90px;
+}
+
+/* Hero Section Kustom */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* ==================================================== */
+/* KUSTOMISASI NAVIGASI (VERSI DINAMIS SCROLL)          */
+/* ==================================================== */
+
+/* 1. Kondisi Awal: Pas di Section Home (Transparan Ikut Warna Home) */
+.navbar {
+    background-color: transparent !important; /* Diubah dari #ffffff ke transparan */
+    transition: all 0.4s ease-in-out; /* Animasi smooth saat berubah warna */
+}
+
+/* Warna awal Brand/Logo saat di Home (Silakan sesuaikan jika ingin putih/warna lain) */
+.navbar-brand {
+    color: #ffffff !important; 
+    transition: color 0.4s ease;
+}
+
+/* Warna teks menu saat masih di area Home */
+.nav-link {
+    color: rgba(255, 255, 255, 0.8) !important; /* Putih agak pudar agar estetik */
+    transition: color 0.3s ease;
+}
+
+/* Efek hover warna emas saat menu didekati (Tetap mempertahankan aksenmu) */
+.nav-link:hover, .nav-link:focus {
+    color: var(--accent-color) !important;
+} 
+
+/* ==================================================== */
+/* 2. Kondisi Setelah Digeser: Otomatis Disuntik via JS */
+/* ==================================================== */
+.navbar-scrolled {
+    background-color: #ffffff !important; /* Kembali ke warna putih aslimu */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Tambah bayangan soft agar melayang */
+}
+
+/* Mengembalikan warna Brand ke warna utama kamu saat navbar sudah putih */
+.navbar-scrolled .navbar-brand {
+    color: var(--primary-color) !important;
+}
+
+/* Mengembalikan warna teks menu ke warna sekunder kamu saat navbar sudah putih */
+.navbar-scrolled .nav-link {
+    color: var(--secondary-color) !important;
+}
+
+/* Efek hover warna emas tetap jalan saat navbar sudah putih */
+.navbar-scrolled .nav-link:hover {
+    color: var(--accent-color) !important;
+}
+/* Kustomisasi Section Home dengan Gradasi */
+.home-gradient {
+    background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 70%, #ffffff 100%);
+    /* Linear gradient: 180 derajat (ke bawah) dari primary ke secondary, berakhir di putih */
+    min-height: 100vh; /* Agar gradasi memenuhi tinggi layar */
+    display: flex;
+    align-items: center;
+    color: var(--light-color); /* Pastikan warna teks default terang agar terbaca di bagian yang gelap */
+}
+
+/* Kustomisasi Tombol Utama */
+.btn-custom {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease;
+}
+.btn-custom:hover {
+    background-color: #bfa075; /* Warna accent sedikit lebih gelap saat di-hover */
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* Kustomisasi Foto Profil di Home */
+.img-profile-home {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%; /* Membuat gambar menjadi bulat sempurna */
+    border: 4px solid var(--accent-color); /* Bingkai warna emas */
+    transition: transform 0.3s ease;
+}
+/* Efek sedikit membesar saat foto didekati kursor */
+.img-profile-home:hover {
+    transform: scale(1.05);
+}
+
+/* Judul Section */
+.section-title {
+    color: var(--primary-color);
+    position: relative;
+    padding-bottom: 15px;
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65px;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+
+/* Kustomisasi Card & Ikon */
+.custom-card {
+    border: 1px solid rgba(33, 58, 86, 0.1);
+    transition: transform 0.3s ease;
+}
+.custom-card:hover {
+    transform: translateY(-5px);
+}
+.icon-box {
+    color: var(--accent-color);
+}
+
+/* ==================================================== */
+/* KUMPULAN CSS FINAL UNTUK EXPERIENCE (SWIPER VERSION) */
+/* ==================================================== */
+
+/* 1. Pengaturan dasar card (Gaya visual tetap dipertahankan) */
+.custom-card-exp {
+    border-radius: 14px;
+    overflow: hidden;
+    background: #ffffff;
+    transition: all 0.4s ease-in-out; /* Durasi animasi pembesaran saat fokus */
+    opacity: 0.4; /* Card di samping dibuat agak pudar agar tidak mendominasi */
+    transform: scale(0.9); /* Card di samping dibuat sedikit lebih kecil */
+}
+
+/* 2. Pengaturan gambar di dalam card */
+.card-img-carousel {
+    height: 220px;
+    object-fit: cover; /* Mencegah gambar gepeng */
+}
+
+/* 3. EFEK FOKUS: Ketika card bergeser ke tengah (Slide Aktif) */
+.swiper-slide-active .custom-card-exp {
+    opacity: 1 !important; /* Terang penuh */
+    transform: scale(1.03) !important; /* Ukuran membesar untuk efek zoom/fokus */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12) !important; /* Bayangan pop-out */
+}
+
+/* 4. Kustomisasi tombol panah Swiper luar (Mengikuti warna tema Anda) */
+.main-swiper-btn {
+    color: var(--primary-color) !important;
+    transform: translateY(-50%);
+}
+
+.main-swiper-btn::after {
+    font-size: 1.8rem; /* Ukuran tanda panah kustom */
+    font-weight: bold;
+}
+
+/* 5. Responsif Tweak: Di HP panah disembunyikan agar bersih (User bisa swipe jari) */
+@media (max-width: 576px) {
+    .main-swiper-btn {
+    display: none; 
+}
+}
+/* Container pembungkus agar di HP tidak terlalu mepet ke pinggir layar */
+.filter-container {
+    padding: 0 10px;
+    margin: 0 auto;
+    max-width: 800px; /* Membatasi lebar agar tombol mengelompok rapi di tengah */
+}
+
+/* Desain tombol filter yang presisi */
+.btn-filter {
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color); /* Garis border sedikit ditebalkan agar tegas */
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.6rem 1.4rem;
+    border-radius: 50px; /* Membuat bentuk kapsul sempurna */
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Efek saat kursor diarahkan ke tombol */
+.btn-filter:hover {
+    color: #ffffff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-2px); /* Efek melayang sedikit saat di-hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tampilan tombol saat aktif/terpilih */
+.btn-filter.active {
+    color: #ffffff !important;
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Pengaturan khusus untuk layar HP (Responsive Tweak) */
+@media (max-width: 576px) {
+    .btn-filter {
+        font-size: 0.8rem; /* Memperkecil tulisan sedikit di HP agar muat */
+        padding: 0.5rem 1rem; /* Memperkecil padding */
+        flex: 1 1 auto; /* Membuat tombol membagi lebar secara adil jika turun ke bawah */
+        min-width: 120px; /* Batas minimal lebar tombol di HP */
+    }
+}
+
+/* Kustomisasi Badge */
+.badge-tech {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+}
+
+/* Kustomisasi Kontak */
+.bg-custom-dark {
+    background-color: var(--primary-color) !important;
+}
+.contact-icon {
+    color: var(--accent-color);
+    transition: color 0.3s ease;
+}
+.contact-icon:hover {
+    color: #ffffff;
+}

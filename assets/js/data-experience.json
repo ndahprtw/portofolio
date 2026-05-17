@@ -1,0 +1,43 @@
+[
+    {
+        "nama": "Asisten Mengajar",
+        "tempat": "WargaLab UTM",
+        "tanggal": "Agustus 2022 - Desember 2024",
+        "deskripsi": "Membimbing praktikum pemrograman, struktur data, dan membantu mahasiswa memahami konsep hingga debugging.",
+        "gambar": [
+            "./my-experience/wargalab.jpg",
+            "./my-experience/sertifikat-wargalab.png"
+        ]
+    },
+    {
+        "nama": "Fullstack Web Developer",
+        "tempat": "UPTD SDN Pejagan 1",
+        "tanggal": "Desember 2023 - Januari 2024",
+        "deskripsi": "Mengembangkan website sekolah terintegrasi berbasis Laravel mencakup profil dan PPDB online.",
+        "gambar": [
+            "./my-project/web-SPMB.png",
+            "./my-experience/sdn-pejagan1.jpg",
+            "./my-experience/sdn-pejagan1 (2).jpg"
+        ]
+    },
+    {
+        "nama": "Fullstack Web Developer",
+        "tempat": "PT. Arkatama",
+        "tanggal": "Februari 2024 - Juni 2024",
+        "deskripsi": "Berkontribusi dalam pengembangan platform e-arsip dan e-commerce menggunakan Laravel & REST API.",
+        "gambar": [
+            "./my-experience/sertifikat-arkatama.png",
+            "./my-experience/sertifikat-arkatama (2).png",
+            "./my-experience/sertifikat-arkatama (3).png"
+        ]
+    },
+    {
+        "nama": "Web Developer",
+        "tempat": "Freelancer",
+        "tanggal": "2025 - Saat Ini",
+        "deskripsi": "Mengembangkan website responsif dengan integrasi REST API sesuai kebutuhan klien.",
+        "gambar": [
+            "./my-project/web-mostlyWeb.png"
+        ]
+    }
+]

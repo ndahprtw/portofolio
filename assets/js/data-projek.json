@@ -1,0 +1,124 @@
+{
+  "daftarProjek": [
+    {
+      "nama": "Website Pengenalan Sekolah",
+      "deskripsi": "Dilengkapi fitur SPMB berbasis web, pengenalan sekolah, pinjam buku bagi siswa.",
+      "gambar": "./assets/my-project/web-SPMB.png",
+      "teknologi": ["Laravel", "MySQL", "Bootstrap"],
+      "kategori": "school"
+    },
+    {
+      "nama": "Website Penginapan Hotel",
+      "deskripsi": "Dilengkapi sewa kamar, reservasi online, dan informasi hotel.",
+      "gambar": "./assets/my-project/web-penginapan.png",
+      "teknologi": ["Laravel", "MySQL", "Bootstrap"],
+      "kategori": "management"
+    },
+    {
+      "nama": "Website E-Arsip Tanah",
+      "deskripsi": "Terdapat sistem pengelolaan arsip tanah digital.",
+      "gambar": "./assets/my-project/web-arsipTanah.png",
+      "teknologi": ["Laravel", "MySQL", "Bootstrap"],
+      "kategori": "management"
+    },
+    {
+      "nama": "E-Commerce Skincare",
+      "deskripsi": "Terdapat fitur belanja online, pembayaran hingga review produk (testimoni).",
+      "gambar": "./assets/my-project/web-skincare.png",
+      "teknologi": ["Laravel", "MySQL", "Bootstrap"],
+      "kategori": "ecommerce"
+    },
+    {
+      "nama": "Website E-Majalah",
+      "deskripsi": "Terdapat CRUD artikel dengan berbagai pilihan layout artikel.",
+      "gambar": "./assets/my-project/web-eMajalah.png",
+      "teknologi": ["Laravel", "MySQL", "Bootstrap"],
+      "kategori": "management"
+    },
+    {
+      "nama": "Website E-Raport",
+      "deskripsi": "Terdapat rekap nilai harian, penilaian akhir hingga cetak raport.",
+      "gambar": "./assets/my-project/web-eRaport.png",
+      "teknologi": ["Laravel", "MySQL", "Bootstrap"],
+      "kategori": "school"
+    },
+    {
+      "nama": "Website Budidaya Ikan",
+      "deskripsi": "Terdapat sistem kelola budidaya ikan hingga laporan bulanan.",
+      "gambar": "./assets/my-project/web-budidayaIkan.png",
+      "teknologi": ["Laravel", "MySQL", "Bootstrap"],
+      "kategori": "management"
+    },
+    {
+      "nama": "Website Informasi Geografis",
+      "deskripsi": "Terdapat sistem informasi geografis berbasis peta digital.",
+      "gambar": "./assets/my-project/web-informasiGeografis.png",
+      "teknologi": ["Laravel", "MySQL", "Bootstrap"],
+      "kategori": "management"
+    },
+    {
+      "nama": "Website Peminjaman Alat Berat",
+      "deskripsi": "Terdapat sistem peminjaman alat berat, pembayaran hingga riwayat pemesanan.",
+      "gambar": "./assets/my-project/web-sewaAlatBerat.png",
+      "teknologi": ["Laravel", "MySQL", "Bootstrap"],
+      "kategori": "management"
+    },
+    {
+      "nama": "Website Inventoris",
+      "deskripsi": "Terdapat fitur pencatatan keluar dan masuk barang hingga rekap laporan.",
+      "gambar": "./assets/my-project/web-inventoris.png",
+      "teknologi": ["Laravel", "MySQL", "Bootstrap"],
+      "kategori": "ecommerce"
+    },
+    {
+      "nama": "Website Penyediaan Barang",
+      "deskripsi": "Terdapat sistem manajemen penyediaan barang secara efisien.",
+      "gambar": "./assets/my-project/web-penyediaanBarang.png",
+      "teknologi": ["Laravel", "MySQL", "Bootstrap"],
+      "kategori": "ecommerce"
+    }
+  ],
+  "dataExperience": [
+    {
+      "nama": "Asisten Mengajar",
+      "tempat": "WargaLab UTM",
+      "tanggal": "Agustus 2022 - Desember 2024",
+      "deskripsi": "Membimbing praktikum pemrograman, struktur data, dan membantu mahasiswa memahami konsep hingga debugging.",
+      "gambar": [
+        "./assets/my-experience/wargalab.jpg",
+        "./assets/my-experience/sertifikat-wargalab.png"
+      ]
+    },
+    {
+      "nama": "Fullstack Web Developer",
+      "tempat": "UPTD SDN Pejagan 1",
+      "tanggal": "Desember 2023 - Januari 2024",
+      "deskripsi": "Mengembangkan website sekolah terintegrasi berbasis Laravel mencakup profil dan PPDB online.",
+      "gambar": [
+        "./my-project/web-SPMB.png",
+        "./assets/my-experience/sdn-pejagan1.jpg",
+        "./assets/my-experience/sdn-pejagan1 (2).jpg"
+      ]
+    },
+    {
+      "nama": "Fullstack Web Developer",
+      "tempat": "PT. Arkatama",
+      "tanggal": "Februari 2024 - Juni 2024",
+      "deskripsi": "Berkontribusi dalam pengembangan platform e-arsip dan e-commerce menggunakan Laravel & REST API.",
+      "gambar": [
+        "./assets/my-experience/sertifikat-arkatama.png",
+        "./assets/my-experience/sertifikat-arkatama (2).png",
+        "./assets/my-experience/sertifikat-arkatama (3).png"
+      ]
+    },
+    {
+      "nama": "Web Developer",
+      "tempat": "Freelancer",
+      "tanggal": "2025 - Saat Ini",
+      "deskripsi": "Mengembangkan website responsif dengan integrasi REST API sesuai kebutuhan klien.",
+      "gambar": [
+        "./assets/my-project/web-mostlyWeb.png"
+      ]
+    }
+  ]
+}
