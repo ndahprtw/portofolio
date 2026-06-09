@@ -10,12 +10,11 @@ const swiper = new Swiper('.experienceSwiper', {
         prevEl: '.swiper-button-prev',
     },
     
-    // RESPONSIVE BREAKPOINTS (Mengatur behavior saat ganti perangkat)
+    // Mengatur behavior saat ganti perangkat
     breakpoints: {
-        // Ketika ukuran layar laptop / desktop (>= 768px)
         768: {
-            slidesPerView: 2, // Muncul 2 card sekaligus di layar laptop
-            spaceBetween: 30  // Jarak antar card di laptop agak longgar
+            slidesPerView: 2, 
+            spaceBetween: 30 
         }
     }
 });

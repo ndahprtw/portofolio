@@ -19,11 +19,9 @@
     <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top navbar-dark kustom-navbar">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#home">Indah Pratiwi</a>
-            <!-- Tombol Hamburger yang muncul HANYA di HP -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- Menu Navigasi: Otomatis berjejer di laptop, otomatis sembunyi di HP -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto gap-2">
                     <li class="nav-item">
@@ -52,10 +50,7 @@
     <!-- SECTION HOME -->
     <section id="home" class="hero-section text-white home-gradient">
         <div class="container text-center">
-            <!-- Foto Profil Bulat -->
-            <!-- Ganti 'foto-profil.jpg' dengan file foto formal/semi-formal Anda -->
             <img src="./assets/img/my-photo.png" alt="Foto Indah Pratiwi" class="img-profile-home mb-4 shadow">
-            
             <h1 class="display-4 fw-bold mb-3">Halo! Saya Indah Pratiwi</h1>
             <p class="lead mb-4" style="color: var(--accent-color); font-weight: 500;">Fullstack Web Developer</p>
             <a href="#" class="btn btn-custom btn-lg shadow px-4"><i class="fa-solid fa-download me-2"></i>Download CV</a>
@@ -101,17 +96,14 @@
     <!-- SECTION PENGALAMAN -->
     <section id="pengalaman" class="py-5 bg-light overflow-hidden">
         <div class="container position-relative">
-            <!-- Judul Section -->
             <h2 class="text-center fw-bold mb-5 section-title">Pengalaman</h2>
             
-            <!-- WRAPPER UTAMA SWIPER -->
             <div class="swiper experienceSwiper px-4">
                 <div class="swiper-wrapper" id="experience-swiper-container">
-                    <!-- Data dari JSON akan di-render otomatis ke sini lewat JavaScript -->
+                    <!-- Data dari JSON  -->
                 </div>
             </div>
 
-            <!-- Tombol Navigasi Swiper Luar -->
             <div class="d-flex justify-content-center gap-4 mt-4 position-relative navigation-wrapper">
                 <div class="swiper-button-prev main-swiper-btn"></div>
                 <div class="swiper-button-next main-swiper-btn"></div>
@@ -170,7 +162,6 @@
         <div class="container">
             <h2 class="text-center fw-bold mb-5 section-title">Projek Terbaru</h2>
 
-            <!-- Tombol Filter yang Sudah Dirapikan -->
             <div class="container mb-5">
                 <div class="d-flex justify-content-center flex-wrap gap-2 filter-container">
                     <button class="btn btn-filter active" data-target="all">Semua Projek</button>
@@ -180,7 +171,7 @@
                 </div>
             </div>
 
-            <!-- Tempat card projek akan di-looping oleh JS -->
+            <!-- Data dari JSON -->
             <div class="row g-4" id="project-container"></div>
         </div>
     </section>
@@ -191,27 +182,20 @@
             <h2 class="fw-bold mb-4" style="color: #ffffff;">Hubungi Saya</h2>
             <p class="mb-5" style="color: rgba(255,255,255,0.7)">Apakah Anda tertarik untuk berkolaborasi? Hubungi saya melalui platform di bawah ini.</p>
             <div class="d-flex justify-content-center gap-4">
-                <!-- WhatsApp -->
                 <a href="https://wa.me/6282132331949" target="_blank" class="contact-icon fs-1 btn btn-outline-light border-0"><i class="fa-brands fa-whatsapp"></i></a>
-                <!-- GitHub -->
-                <a href="https://github.com/ndahpratw" target="_blank" class="contact-icon fs-1 btn btn-outline-light border-0"><i class="fa-brands fa-github"></i></a>
-                <!-- Email -->
+                <a href="https://github.com/ndahprtw" target="_blank" class="contact-icon fs-1 btn btn-outline-light border-0"><i class="fa-brands fa-github"></i></a>
                 <a href="mailto:indhpratw@email.com" class="contact-icon fs-1 btn btn-outline-light border-0"><i class="fa-solid fa-envelope"></i></a>
             </div>
             <p class="mt-5 mb-0 small" style="color: rgba(255,255,255,0.4)">&copy; 2026 Indah Pratiwi. All rights reserved.</p>
         </div>
     </section>
 
-    <!-- Bootstrap 5.3 JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="./assets/js/projek.js"></script>
     <script src="./assets/js/swipper.js"></script>
     <script src="./assets/js/experience.js"></script>
-
-    <!-- Custom JS -->
-     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

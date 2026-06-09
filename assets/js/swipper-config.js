@@ -100,5 +100,4 @@ function startInternalCarousel(swiper) {
     internalIntervals.push(intervalId);
 }
 
-// Jalankan load data saat DOM siap
 document.addEventListener('DOMContentLoaded', loadExperienceData);

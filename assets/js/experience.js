@@ -1,5 +1,3 @@
-
-    // Data asli milikmu
 const dataExperience = [
     {
         "nama": "Asisten Mengajar",
@@ -52,10 +50,8 @@ function renderExperience() {
     dataExperience.forEach((exp, index) => {
         const idCarouselInternal = `carouselExpInternal-${index}`;
         
-        // 1. Loop untuk meng-generate gambar di dalam Carousel Bootstrap internal
         let gambarHTML = '';
         exp.gambar.forEach((imgUrl, imgIndex) => {
-            // Gambar urutan pertama (indeks 0) wajib mendapatkan class 'active'
             const activeClass = imgIndex === 0 ? 'active' : '';
             gambarHTML += `
                 <div class="carousel-item ${activeClass}">
@@ -64,10 +60,9 @@ function renderExperience() {
             `;
         });
 
-        // Trik interval acak agar perpindahan gambar antar card tidak kompak bersamaan
         const randomInterval = 3000 + (index * 200); 
 
-        // 2. Susun element slide Swiper-nya
+        // element slide Swiper-nya
         const slideHTML = `
             <div class="swiper-slide py-3">
                 <div class="card h-100 border-0 shadow-sm custom-card-exp">
@@ -94,7 +89,6 @@ function renderExperience() {
         swiperWrapper.innerHTML += slideHTML;
     });
 
-    // 3. Inisialisasi SwiperJS JIKA semua element HTML sudah berhasil di-render
     initSwiper();
 }
 
@@ -117,5 +111,5 @@ function initSwiper() {
     });
 }
 
-// Jalankan fungsi render saat halaman siap
+
 renderExperience();
