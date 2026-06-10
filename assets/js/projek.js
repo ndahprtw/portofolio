@@ -4,6 +4,7 @@ const daftarProjek = [
     "deskripsi": "Dilengkapi fitur SPMB berbasis web, pengenalan sekolah, pinjam buku bagi siswa.",
     "gambar": "./assets/img/my-project/web-SPMB.png",
     "teknologi": ["Laravel", "MySQL", "Bootstrap"],
+    "link" : "https://canva.link/knufe0i9h38n9c3",
     "kategori": "school"
     },
     {
@@ -11,6 +12,7 @@ const daftarProjek = [
     "deskripsi": "Dilengkapi sewa kamar, reservasi online, dan informasi hotel.",
     "gambar": "./assets/img/my-project/web-penginapan.png",
     "teknologi": ["Laravel", "MySQL", "Bootstrap"],
+    "link" : "https://canva.link/azlsdv7z892k8wr",
     "kategori": "management"
     },
     {
@@ -18,13 +20,15 @@ const daftarProjek = [
     "deskripsi": "Terdapat sistem pengelolaan arsip tanah digital.",
     "gambar": "./assets/img/my-project/web-arsipTanah.png",
     "teknologi": ["Laravel", "MySQL", "Bootstrap"],
+    "link" : "https://canva.link/9f3lmtfarokh84s",
     "kategori": "management"
     },
     {
     "nama": "E-Commerce Skincare",
-    "deskripsi": "Terdapat fitur belanja online, pembayaran hingga review produk (testimoni).",
+    "deskripsi": "Terdapat fitur belanja online (QRIS), pembayaran hingga review produk (testimoni).",
     "gambar": "./assets/img/my-project/web-skincare.png",
     "teknologi": ["Laravel", "MySQL", "Bootstrap"],
+    "link" : " https://canva.link/xmzzeqrt3dufd31",
     "kategori": "ecommerce"
     },
     {
@@ -32,6 +36,7 @@ const daftarProjek = [
     "deskripsi": "Terdapat CRUD artikel dengan berbagai pilihan layout artikel.",
     "gambar": "./assets/img/my-project/web-eMajalah.png",
     "teknologi": ["Laravel", "MySQL", "Bootstrap"],
+    "link" : null,
     "kategori": "management"
     },
     {
@@ -39,6 +44,7 @@ const daftarProjek = [
     "deskripsi": "Terdapat rekap nilai harian, penilaian akhir hingga cetak raport.",
     "gambar": "./assets/img/my-project/web-eRaport.png",
     "teknologi": ["Laravel", "MySQL", "Bootstrap"],
+    "link" : null,
     "kategori": "school"
     },
     {
@@ -46,6 +52,7 @@ const daftarProjek = [
     "deskripsi": "Terdapat sistem kelola budidaya ikan hingga laporan bulanan.",
     "gambar": "./assets/img/my-project/web-budidayaIkan.png",
     "teknologi": ["Laravel", "MySQL", "Bootstrap"],
+    "link" : null,
     "kategori": "management"
     },
     {
@@ -53,6 +60,7 @@ const daftarProjek = [
     "deskripsi": "Terdapat sistem informasi geografis berbasis peta digital.",
     "gambar": "./assets/img/my-project/web-informasiGeografis.png",
     "teknologi": ["Laravel", "MySQL", "Bootstrap"],
+    "link" : null,
     "kategori": "management"
     },
     {
@@ -60,6 +68,7 @@ const daftarProjek = [
     "deskripsi": "Terdapat sistem peminjaman alat berat, pembayaran hingga riwayat pemesanan.",
     "gambar": "./assets/img/my-project/web-sewaAlatBerat.png",
     "teknologi": ["Laravel", "MySQL", "Bootstrap"],
+    "link" : null,
     "kategori": "management"
     },
     {
@@ -67,6 +76,7 @@ const daftarProjek = [
     "deskripsi": "Terdapat fitur pencatatan keluar dan masuk barang hingga rekap laporan.",
     "gambar": "./assets/img/my-project/web-inventoris.png",
     "teknologi": ["Laravel", "MySQL", "Bootstrap"],
+    "link" : null,
     "kategori": "ecommerce"
     },
     {
@@ -74,6 +84,7 @@ const daftarProjek = [
     "deskripsi": "Terdapat sistem manajemen penyediaan barang secara efisien.",
     "gambar": "./assets/img/my-project/web-penyediaanBarang.png",
     "teknologi": ["Laravel", "MySQL", "Bootstrap"],
+    "link" : null,
     "kategori": "ecommerce"
     }
 ];
@@ -97,10 +108,20 @@ function tampilkanProjek(kategoriFilter = 'all') {
             <div class="card h-100 border-0 shadow-sm custom-card">
             <img src="${projek.gambar}" class="card-img-top" alt="${projek.nama}">
             <div class="card-body">
-                <h5 class="card-title fw-bold" style="color: var(--primary-color);">${projek.nama}</h5>
+                <div class="d-flex justify-content-between align-items-start">
+                    <h5 class="card-title fw-bold mb-0" style="color: var(--primary-color);">
+                        ${projek.nama}
+                    </h5>
+
+                    ${projek.link ? `
+                        <a href="${projek.link}" target="_blank" class="btn btn-outline-primary btn-sm text-decoration-none ms-2">
+                            <i class="bi bi-globe"></i>
+                        </a>
+                    ` : ''}
+                </div>
                 <p class="card-text text-secondary small">${projek.deskripsi}</p>
                 <div class="mt-3">
-            ${badgeHTML}
+                    ${badgeHTML}
                 </div>
             </div>
             </div>
