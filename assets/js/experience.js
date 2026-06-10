@@ -15,7 +15,7 @@ const dataExperience = [
         "tanggal": "Desember 2023 - Januari 2024",
         "deskripsi": "Mengembangkan website sekolah terintegrasi berbasis Laravel mencakup profil dan PPDB online.",
         "gambar": [
-            "./my-project/web-SPMB.png",
+            "./assets/img/my-project/web-SPMB.png",
             "./assets/img/my-experience/sdn-pejagan1.jpg",
             "./assets/img/my-experience/sdn-pejagan1-2.jpg"
         ]
