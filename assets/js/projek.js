@@ -86,6 +86,14 @@ const daftarProjek = [
     "teknologi": ["Laravel", "MySQL", "Bootstrap"],
     "link" : null,
     "kategori": "ecommerce"
+    },
+    {
+    "nama": "Website Absensi Digital",
+    "deskripsi": "Sistem manajemen absensi digital dg penerapan Face Descriptor.",
+    "gambar": "./assets/img/my-project/web-absensiDigital.png",
+    "teknologi": ["Laravel", "MySQL", "Bootstrap"],
+    "link" : "https://canva.link/2nv5zji91potnkm",
+    "kategori": "school"
     }
 ];
 
