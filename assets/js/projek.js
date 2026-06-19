@@ -40,19 +40,19 @@ const daftarProjek = [
     "kategori": "management"
     },
     {
-    "nama": "Website E-Raport",
+    "nama": "Website Penilaian Akademik",
     "deskripsi": "Terdapat rekap nilai harian, penilaian akhir hingga cetak raport.",
     "gambar": "./assets/img/my-project/web-eRaport.png",
     "teknologi": ["Laravel", "MySQL", "Bootstrap"],
-    "link" : null,
+    "link" : 'https://canva.link/38l9amedclge3np',
     "kategori": "school"
     },
     {
     "nama": "Website Budidaya Ikan",
-    "deskripsi": "Terdapat sistem kelola budidaya ikan hingga laporan bulanan.",
+    "deskripsi": "Terdapat sistem kelola budidaya ikan hingga laporan harian.",
     "gambar": "./assets/img/my-project/web-budidayaIkan.png",
     "teknologi": ["Laravel", "MySQL", "Bootstrap"],
-    "link" : null,
+    "link" : 'https://canva.link/iwpdy9exumn8hg0',
     "kategori": "management"
     },
     {
@@ -64,28 +64,44 @@ const daftarProjek = [
     "kategori": "management"
     },
     {
-    "nama": "Website Peminjaman Alat Berat",
-    "deskripsi": "Terdapat sistem peminjaman alat berat, pembayaran hingga riwayat pemesanan.",
+    "nama": "Website Rental & Penjualan Alat Berat",
+    "deskripsi": "Platform sewa dan beli alat berat secara online.",
     "gambar": "./assets/img/my-project/web-sewaAlatBerat.png",
     "teknologi": ["Laravel", "MySQL", "Bootstrap"],
-    "link" : null,
+    "link": "https://canva.link/0v41xsc5z4gf0dz",
     "kategori": "management"
     },
+    // {
+    // "nama": "Website Inventoris",
+    // "deskripsi": "Terdapat fitur pencatatan keluar dan masuk barang hingga rekap laporan.",
+    // "gambar": "./assets/img/my-project/web-inventoris.png",
+    // "teknologi": ["Laravel", "MySQL", "Bootstrap"],
+    // "link" : null,
+    // "kategori": "ecommerce"
+    // },
+    // {
+    // "nama": "Website Penyediaan Barang",
+    // "deskripsi": "Terdapat sistem manajemen penyediaan barang secara efisien.",
+    // "gambar": "./assets/img/my-project/web-penyediaanBarang.png",
+    // "teknologi": ["Laravel", "MySQL", "Bootstrap"],
+    // "link" : null,
+    // "kategori": "ecommerce"
+    // },
     {
-    "nama": "Website Inventoris",
-    "deskripsi": "Terdapat fitur pencatatan keluar dan masuk barang hingga rekap laporan.",
-    "gambar": "./assets/img/my-project/web-inventoris.png",
+    "nama": "Website MATERIAL",
+    "deskripsi": "Aplikasi manajemen material dengan fitur stok, permintaan, dan pelaporan.",
+    "gambar": "./assets/img/my-project/web-materialis.png",
     "teknologi": ["Laravel", "MySQL", "Bootstrap"],
-    "link" : null,
+    "link" : 'https://canva.link/abf0nxi95f00uei',
     "kategori": "ecommerce"
     },
     {
-    "nama": "Website Penyediaan Barang",
-    "deskripsi": "Terdapat sistem manajemen penyediaan barang secara efisien.",
-    "gambar": "./assets/img/my-project/web-penyediaanBarang.png",
+    "nama": "Website Monitoring Kinerja Karyawan",
+    "deskripsi": "Terdapat sistem monitoring untuk menilai kinerja karyawan kontrak.",
+    "gambar": "./assets/img/my-project/web-monitoringKinerja.png",
     "teknologi": ["Laravel", "MySQL", "Bootstrap"],
-    "link" : null,
-    "kategori": "ecommerce"
+    "link" : "https://canva.link/0ic6fymwdw3j68b",
+    "kategori": "management"
     },
     {
     "nama": "Website Absensi Digital",
