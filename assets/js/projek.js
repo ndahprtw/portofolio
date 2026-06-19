@@ -69,7 +69,7 @@ const daftarProjek = [
     "gambar": "./assets/img/my-project/web-sewaAlatBerat.png",
     "teknologi": ["Laravel", "MySQL", "Bootstrap"],
     "link": "https://canva.link/0v41xsc5z4gf0dz",
-    "kategori": "management"
+    "kategori": "ecommerce"
     },
     // {
     // "nama": "Website Inventoris",
