@@ -60,7 +60,7 @@ const daftarProjek = [
     "deskripsi": "Terdapat sistem informasi geografis berbasis peta digital.",
     "gambar": "./assets/img/my-project/web-informasiGeografis.png",
     "teknologi": ["Laravel", "MySQL", "Bootstrap"],
-    "link" : null,
+    "link" : 'https://canva.link/m11cdlebefgdlec',
     "kategori": "management"
     },
     {
